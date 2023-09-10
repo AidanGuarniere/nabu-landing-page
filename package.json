@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "cd server && npm install"
+  },
+  "engines": {
+    "node": "16.16.0"
+  }
+}
