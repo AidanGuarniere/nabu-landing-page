@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const emailValue = form.querySelector('input[name="email"]').value;
 
-    // Send data using fetch
     try {
       const response = await fetch(form.action, {
         method: "POST",
