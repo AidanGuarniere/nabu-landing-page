@@ -7,15 +7,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const emailValue = form.querySelector('input[name="email"]').value;
 
     try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: emailValue,
-        }),
-      });
+      const response = await fetch(
+        "https://nabu-waitlist-6ff7e1fa098e.herokuapp.com/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: emailValue,
+          }),
+        }
+      );
 
       const result = await response.json();
 
