@@ -39,7 +39,7 @@ app.post("/submit", (req, res) => {
   });
   newEmail
     .save()
-    .then(() => res.json({ status: "Email saved!" }))
+    .then(() => res.json({ status: "Signup successful" }))
     .catch((err) => {
       console.error("Error saving email", err);
       res.status(400).json({ error: "Failed to save email." });
