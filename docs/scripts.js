@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     try {
       const response = await fetch(
-        "https://nabu-waitlist-6ff7e1fa098e.herokuapp.com/",
+        "https://nabu-waitlist-6ff7e1fa098e.herokuapp.com/submit",
         {
           method: "POST",
           headers: {
