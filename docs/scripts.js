@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const result = await response.json();
 
       if (response.ok) {
-        // Handle success, maybe display a success message or clear the form
-        alert(result.status);
+        // Replace the content of the signup-container with the thank you message
+        document.getElementById("signup-container").innerHTML = "<span class='signup-header'>Thanks for signing up, we'll reach out on launch day!</span>";
         form.reset();
-      } else {
+    } else {
         // Handle errors, maybe display an error message
         alert(result.errors.email.message);
       }
